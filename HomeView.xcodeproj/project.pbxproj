@@ -11,6 +11,11 @@
 		8DF2FC132A376F3B00ADE2BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FC122A376F3B00ADE2BC /* ContentView.swift */; };
 		8DF2FC152A376F3C00ADE2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2FC142A376F3C00ADE2BC /* Assets.xcassets */; };
 		8DF2FC182A376F3C00ADE2BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF2FC172A376F3C00ADE2BC /* Preview Assets.xcassets */; };
+		8DF2FC1F2A376F7800ADE2BC /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FC1E2A376F7800ADE2BC /* HomePresenter.swift */; };
+		8DF2FC212A376F8900ADE2BC /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FC202A376F8900ADE2BC /* HomeInteractor.swift */; };
+		8DF2FC232A376FA400ADE2BC /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FC222A376FA400ADE2BC /* HomeAPI.swift */; };
+		8DF2FC252A376FBA00ADE2BC /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FC242A376FBA00ADE2BC /* HomeModels.swift */; };
+		8DF2FC272A376FEF00ADE2BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF2FC262A376FEF00ADE2BC /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		8DF2FC122A376F3B00ADE2BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DF2FC142A376F3C00ADE2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DF2FC172A376F3C00ADE2BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DF2FC1E2A376F7800ADE2BC /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		8DF2FC202A376F8900ADE2BC /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		8DF2FC222A376FA400ADE2BC /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		8DF2FC242A376FBA00ADE2BC /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		8DF2FC262A376FEF00ADE2BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				8DF2FC102A376F3B00ADE2BC /* HomeViewApp.swift */,
 				8DF2FC122A376F3B00ADE2BC /* ContentView.swift */,
+				8DF2FC262A376FEF00ADE2BC /* HomeView.swift */,
+				8DF2FC1E2A376F7800ADE2BC /* HomePresenter.swift */,
+				8DF2FC202A376F8900ADE2BC /* HomeInteractor.swift */,
+				8DF2FC222A376FA400ADE2BC /* HomeAPI.swift */,
+				8DF2FC242A376FBA00ADE2BC /* HomeModels.swift */,
 				8DF2FC142A376F3C00ADE2BC /* Assets.xcassets */,
 				8DF2FC162A376F3C00ADE2BC /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF2FC1F2A376F7800ADE2BC /* HomePresenter.swift in Sources */,
+				8DF2FC272A376FEF00ADE2BC /* HomeView.swift in Sources */,
 				8DF2FC132A376F3B00ADE2BC /* ContentView.swift in Sources */,
+				8DF2FC232A376FA400ADE2BC /* HomeAPI.swift in Sources */,
 				8DF2FC112A376F3B00ADE2BC /* HomeViewApp.swift in Sources */,
+				8DF2FC252A376FBA00ADE2BC /* HomeModels.swift in Sources */,
+				8DF2FC212A376F8900ADE2BC /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
