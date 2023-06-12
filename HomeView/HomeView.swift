@@ -13,12 +13,8 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-protocol HomeViewProtocol: AnyObject {
-    func displayHomeData(_ viewModel: HomeViewModel)
-}
-
 struct HomeView: View {
-    @StateObject private var presenter = HomePresenter()
+    @ObservedObject private var presenter = HomePresenter()
 
     var body: some View {
         VStack {
@@ -38,14 +34,5 @@ struct HomeView: View {
         .onAppear {
             presenter.fetchHomeData()
         }
-        .onReceive(presenter.$homeData) { homeData in
-            if let homeData = homeData {
-                self.displayHomeData(homeData)
-            }
-        }
-    }
-
-    private func displayHomeData(_ viewModel: HomeViewModel) {
-        // Update the view with the fetched data
     }
 }

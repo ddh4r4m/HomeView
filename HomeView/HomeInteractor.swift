@@ -10,15 +10,11 @@ import Foundation
 class HomeInteractor {
     private let api = HomeAPI()
 
-    func fetchHomeData(completion: @escaping (Result<HomeViewModel, Error>) -> Void) {
+    func fetchHomeData(completion: @escaping (Result<HomeResponse, Error>) -> Void) {
         api.fetchHomeData { result in
             switch result {
             case .success(let response):
-                let viewModels = response.items.map { item in
-                    ItemViewModel(id: item.id, name: item.name, description: item.description)
-                }
-                let viewModel = HomeViewModel(items: viewModels)
-                completion(.success(viewModel))
+                completion(.success(response))
             case .failure(let error):
                 completion(.failure(error))
             }

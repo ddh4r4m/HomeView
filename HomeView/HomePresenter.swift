@@ -11,7 +11,7 @@ import Foundation
 
 class HomePresenter: ObservableObject {
     private let interactor = HomeInteractor()
-    @Published var homeData: HomeViewModel?
+    @Published var homeData: HomeResponse?
 
     func fetchHomeData() {
         interactor.fetchHomeData { result in

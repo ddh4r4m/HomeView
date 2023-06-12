@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Item: Codable {
+struct Item: Codable, Identifiable {
     let id: Int
     let name: String
     let description: String
@@ -15,14 +15,4 @@ struct Item: Codable {
 
 struct HomeResponse: Codable {
     let items: [Item]
-}
-
-struct HomeViewModel {
-    let items: [ItemViewModel]
-}
-
-struct ItemViewModel: Identifiable {
-    let id: Int
-    let name: String
-    let description: String
 }
